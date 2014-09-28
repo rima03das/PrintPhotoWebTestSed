@@ -48,12 +48,11 @@ public class FirstAction implements Action {
 				+ "' and password = '" + password + "'");
 
 		List l = q.list();
-		
-		
-		if(l == null){
+
+		if (l == null) {
 			System.out.println("invalid userid or password");
 			return "invalid";
-		}else{
+		} else {
 			System.out.println("VALID USER");
 			return "valid";
 		}
