@@ -28,7 +28,7 @@ public class FirstAction implements Action {
 		s.getTransaction().commit();
 		s.close();
 
-		if (l == null) {
+		if (l.size() == 0) {
 			System.out.println("NEW USER");
 			return "newuser";
 		} else {
@@ -49,7 +49,7 @@ public class FirstAction implements Action {
 
 		List l = q.list();
 
-		if (l == null) {
+		if (l.size() == 0) {
 			System.out.println("invalid userid or password");
 			return "invalid";
 		} else {

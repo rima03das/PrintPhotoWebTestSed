@@ -5,7 +5,7 @@
 
 <struts>
 	
-	<package name="user" namespace="/User" extends="struts-default">
+	<package name="user"  extends="struts-default">
 		<action name="printaction" class="testpkg.FirstAction" method="checkUser">
 			<result name="newuser">/print.jsp</result>
 			<result name="olduser">/index.jsp</result>
